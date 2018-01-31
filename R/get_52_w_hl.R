@@ -16,8 +16,8 @@ get_52_w_hl <- function(x) {
     html_text() %>%
     gsub(pattern = "\n", ., replacement = "")
   high_low <- stock_values[2] %>%
-    strsplit(split = " - ") %>%
     gsub(pattern = ",", ., replacement = "") %>%
+    strsplit(split = " - ") %>%
     unlist() %>%
     as.numeric()
   return(high_low)
