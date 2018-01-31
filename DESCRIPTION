@@ -1,5 +1,5 @@
 Package: stockreenr
-Title: Value Investment With R (one line, title case)
+Title: Value Investment With R
 Version: 0.0.0.9000
 Authors@R: person("Yao-Jen", "Kuo", email = "tony@kyosei.ai", role = c("aut", "cre"))
 Description: This package is developed for those who are interested in both Mr. Huang's investment strategy and R.
