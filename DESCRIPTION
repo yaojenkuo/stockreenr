@@ -1,0 +1,16 @@
+Package: stockreenr
+Title: Value Investment With R (one line, title case)
+Version: 0.0.0.9000
+Authors@R: person("Yao-Jen", "Kuo", email = "tony@kyosei.ai", role = c("aut", "cre"))
+Description: This package is developed for those who are interested in both Mr. Huang's investment strategy and R.
+Depends: R (>= 3.4.3)
+License: GNU Affero General Public License
+Encoding: UTF-8
+LazyData: true
+Imports:
+    rvest,
+    jsonlite,
+    lubridate,
+    ggplot2,
+    magrittr
+RoxygenNote: 6.0.1.9000
