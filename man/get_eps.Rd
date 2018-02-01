@@ -8,9 +8,11 @@ get_eps(x, recent_n = 8)
 }
 \arguments{
 \item{x}{Stock ticker.}
+
+\item{recent_n}{Recent n quarters, default 8.}
 }
 \description{
-This function will return the EPS of recent 8 quarters of a certain stock.
+This function will return the EPS of recent n quarters of a certain stock.
 }
 \examples{
 get_eps(2330)

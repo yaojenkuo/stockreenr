@@ -8,6 +8,8 @@ get_n_month_sales_yoy(x, recent_n = 3)
 }
 \arguments{
 \item{x}{Stock ticker.}
+
+\item{recent_n}{Recent n months, default 3.}
 }
 \description{
 This function will return n months of sales yoy in thousands NTD of a certain stock.

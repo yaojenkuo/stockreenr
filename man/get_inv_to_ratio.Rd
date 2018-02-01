@@ -8,6 +8,8 @@ get_inv_to_ratio(x, recent_n = 8)
 }
 \arguments{
 \item{x}{Stock ticker.}
+
+\item{recent_n}{Recent n quarters, default 8.}
 }
 \description{
 This function will return the inventory turnover ratio of a certain stock.
