@@ -2,7 +2,7 @@
 #'
 #' This function will return 16 quarters of profit after tax in thousands NTD of a certain stock.
 #' @param x Stock ticker.
-#' @param recent_n Recent n quarters.
+#' @param recent_n Recent n quarters, default 16.
 #' @keywords get_quarterly_profit
 #' @export
 #' @examples
