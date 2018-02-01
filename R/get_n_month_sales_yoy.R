@@ -2,6 +2,7 @@
 #'
 #' This function will return n months of sales yoy in thousands NTD of a certain stock.
 #' @param x Stock ticker.
+#' @param recent_n Recent n months, default 3.
 #' @keywords get_n_month_sales_yoy
 #' @export
 #' @examples
@@ -23,10 +24,10 @@ get_n_month_sales_yoy <- function(x, recent_n = 3) {
     gsub(pattern = "%", ., replacement = "") %>%
     as.numeric()
   sales_yoy <- c(last_yr, current_yr)
-  sales_yoy_len <- length(sales_yoy)
+  period_len <- length(sales_yoy)
   if (recent_n > sales_yoy_len) {
-    return(sprintf("月份數不能超過%s"), sales_yoy_len)
+    return(sprintf("月份數不能超過%s"), period_len)
   } else {
-    return(sales_yoy[(sales_yoy_len - recent_n + 1):sales_yoy_len])
+    return(sales_yoy[(period_len - recent_n + 1):period_len])
   }
 }

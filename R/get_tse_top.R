@@ -34,6 +34,7 @@ get_tse_top <- function(n = 100) {
   # get result_df
   result_df <- data.frame(ticker = ticker,
                           name = name,
-                          price = price)
+                          price = price,
+                          stringsAsFactors = FALSE)
   return(result_df[1:n, ])
 }
