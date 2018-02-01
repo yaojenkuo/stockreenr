@@ -25,7 +25,7 @@ get_n_month_sales_yoy <- function(x, recent_n = 3) {
     as.numeric()
   sales_yoy <- c(last_yr, current_yr)
   period_len <- length(sales_yoy)
-  if (recent_n > sales_yoy_len) {
+  if (recent_n > period_len) {
     return(sprintf("月份數不能超過%s"), period_len)
   } else {
     return(sales_yoy[(period_len - recent_n + 1):period_len])
